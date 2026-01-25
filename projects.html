@@ -670,13 +670,25 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+.project-section *,
+.project-section p,
+.project-section li,
+.project-section span,
+.project-section div {
+    color: #000000 !important;
+}
+
 .project-section h2 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: white !important;
     padding: 30px;
     margin: 0;
     font-size: 1.8em;
     font-weight: 700;
+}
+
+.project-section h2 * {
+    color: white !important;
 }
 
 .project-header {
@@ -693,16 +705,24 @@
 
 .meta-badge {
     background: #667eea;
-    color: white;
+    color: white !important;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9em;
     font-weight: 600;
 }
 
+.meta-badge * {
+    color: white !important;
+}
+
 .project-content {
     padding: 30px;
     color: #000000;
+}
+
+.project-content * {
+    color: #000000 !important;
 }
 
 .section-block {
@@ -817,6 +837,19 @@
 .test-item p,
 .workflow-step p {
     margin: 10px 0;
+    color: #000000 !important;
+}
+
+.component-item ul,
+.feature-item ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.component-item ul li,
+.feature-item ul li {
+    color: #000000 !important;
+    padding: 5px 0;
 }
 
 .challenge-item strong,
@@ -851,13 +884,17 @@
 
 .timeline-marker {
     background: #667eea;
-    color: white;
+    color: white !important;
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 700;
     font-size: 0.9em;
     flex-shrink: 0;
     height: fit-content;
+}
+
+.timeline-marker * {
+    color: white !important;
 }
 
 .timeline-content h5 {
@@ -1013,6 +1050,10 @@
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn * {
+    color: white !important;
 }
 
 .download-btn:hover {
